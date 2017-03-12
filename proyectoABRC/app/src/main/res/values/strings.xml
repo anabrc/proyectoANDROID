@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CLUB DEPORTIVO</string>
+    <string name="title_activity_main4">CLUB DEPORTIVO</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="Pistas">
+        <item>BALONCESTO</item>
+        <item>FUTBOL SALA</item>
+        <item>TENIS</item>
+        <item>PADEL</item>
+    </string-array>
+
+    <string name="title_activity_main5">CLUB DEPORTIVO</string>
+</resources>

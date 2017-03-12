@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ana.proyectoabrc.Main4Activity"
+    tools:showIn="@layout/app_bar_main4">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="RESERVA UNA PISTA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtReserva"
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="28dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="Elige una pista:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtReserva"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="37dp"
+                android:id="@+id/txtElegir"
+                android:textColor="@android:color/black" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnPistas"
+                android:layout_below="@+id/txtElegir"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Fecha:"
+                    android:layout_width="354dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageButton2"
+                    android:layout_toEndOf="@+id/imageButton2"
+                    android:layout_marginStart="26dp"
+                    android:id="@+id/txtFechaSelect" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_my_calendar"
+                    android:layout_marginTop="33dp"
+                    android:id="@+id/imageButton2"
+                    android:layout_below="@+id/spnPistas"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtFechaSelect"
+                    android:layout_alignStart="@+id/txtFechaSelect"
+                    android:id="@+id/txtDateValues"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_recent_history"
+                    android:layout_below="@+id/imageButton2"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/imageButton3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtHoraSelect"
+                    android:layout_alignStart="@+id/txtHoraSelect"
+                    android:id="@+id/txtTimeValues"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="Desde:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtHoraSelect"
+                    android:layout_below="@+id/imageButton2"
+                    android:layout_alignStart="@+id/txtDateValues" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_recent_history"
+                    android:id="@+id/imageButton5"
+                    android:layout_below="@+id/imageButton3"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtMaximo"
+                    android:layout_below="@+id/imageButton3"
+                    android:layout_alignStart="@+id/txtTimeValues"
+                    android:text="Hasta:" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtSelectMaximo"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:textStyle="normal|bold"
+                    android:layout_below="@+id/txtMaximo"
+                    android:layout_alignStart="@+id/txtMaximo" />
+
+            </RelativeLayout>
+
+            <Button
+                android:text="RESERVAR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edtDniReserva"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/btnReservar"
+                android:background="@android:color/holo_orange_dark"
+                android:elevation="0dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
